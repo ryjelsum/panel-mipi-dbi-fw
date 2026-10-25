@@ -1,0 +1,18 @@
+command 0x11 # exit sleep mode
+delay 120
+
+command 0x26 0x04 # gamma curve 3 select
+command 0x3A 0x05 # pixel format RGB565
+delay 20
+
+command 0x36 0xA0 # address mode (madctl) row/col exchange, row address swap
+delay 10
+
+command 0xBA 0x04 # enable gamma
+command 0x21      # invert colours
+command 0x13      # NORON partial off
+delay 10
+
+command 0xB1 0x06 0x01 0x01 # Frame rate control, ~100Hz
+command 0x29 # display on
+
