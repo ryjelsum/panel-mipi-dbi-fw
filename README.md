@@ -1,6 +1,6 @@
 # panel-mipi-dbi
 
-Tool to make firmware files for the Linux display driver panel-mipi-dbi.
+Tool to make firmware files for the Linux SPI display driver [panel-mipi-dbi](https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/tiny/panel-mipi-dbi.c).
 
 This repository also contains firmware files for selected displays, as well as their source files with informative comments, if possible. 
 
